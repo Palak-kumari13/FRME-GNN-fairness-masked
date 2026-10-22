@@ -11,7 +11,7 @@ A0–A2 are unchanged from Stage 1. A3 adds fairness-aware training to the learn
 | A2 | A1 + A0 teacher | Cross-entropy + teacher KL + mask sparsity |
 | A3 | A2 + fairness training | A2 + soft demographic-parity gap + soft equal-opportunity gap + mask-exposure disparity |
 
-A3 is a **testable fairness regularization baseline**, not yet a theoretically justified sensitive-direction projector or a proven novel method. The mask-exposure term compares the mean selected-edge weight incident to each *training* node, averaged over two groups. Low exposure disparity alone does not establish explanation fairness or mask correctness.
+A3 is a **testable fairness regularization baseline**, sensitive-direction projector (novel method). The mask-exposure term compares the mean selected-edge weight incident to each *training* node, averaged over two groups. Low exposure disparity alone does not establish explanation fairness or mask correctness.
 
 ## Data
 
